@@ -1,3 +1,4 @@
+# I am not the original owner and maintainer of this plugin, I've modified this plugin as per my needs of http 0.13.0, the original plugin depends on http 0.12. Original Plugin: <a href="https://pub.dev/packages/google_geocoding" target="_blank">Here</a>. Original Owner's GitHub: <a href="https://github.com/bazrafkan" target="_blank">Here</a>.
 
 # google_geocoding
 
