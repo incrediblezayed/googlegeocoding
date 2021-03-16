@@ -2,8 +2,8 @@ import 'package:google_geocoding/src/models/northeast.dart';
 import 'package:google_geocoding/src/models/southwest.dart';
 
 class Viewport {
-  final Northeast northeast;
-  final Southwest southwest;
+  final Northeast? northeast;
+  final Southwest? southwest;
 
   Viewport({this.northeast, this.southwest});
 

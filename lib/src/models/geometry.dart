@@ -3,10 +3,10 @@ import 'package:google_geocoding/src/models/location.dart';
 import 'package:google_geocoding/src/models/viewport.dart';
 
 class Geometry {
-  final Location location;
-  final String locationType;
-  final Viewport viewport;
-  final Bounds bounds;
+  final Location? location;
+  final String? locationType;
+  final Viewport? viewport;
+  final Bounds? bounds;
 
   Geometry({this.location, this.locationType, this.viewport, this.bounds});
 

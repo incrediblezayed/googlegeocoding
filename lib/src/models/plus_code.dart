@@ -1,6 +1,6 @@
 class PlusCode {
-  final String globalCode;
-  final String compoundCode;
+  final String? globalCode;
+  final String? compoundCode;
 
   PlusCode({this.globalCode, this.compoundCode});
 

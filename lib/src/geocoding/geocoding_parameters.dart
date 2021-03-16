@@ -7,9 +7,9 @@ class GeocodingParameters {
     String apiKEY,
     String address,
     List<Component> components,
-    Bounds bounds,
-    String language,
-    String region,
+    Bounds? bounds,
+    String? language,
+    String? region,
   ) {
     Map<String, String> queryParameters = {
       'key': apiKEY,
@@ -41,7 +41,7 @@ class GeocodingParameters {
     if (bounds != null) {
       var item = {
         'bounds':
-            '${bounds.southwest.lat},${bounds.southwest.lng}|${bounds.northeast.lat},${bounds.northeast.lng}',
+            '${bounds.southwest!.lat},${bounds.southwest!.lng}|${bounds.northeast!.lat},${bounds.northeast!.lng}',
       };
       queryParameters.addAll(item);
     }
@@ -66,9 +66,9 @@ class GeocodingParameters {
   static Map<String, String> createReverseParameters(
     String apiKEY,
     LatLon latlng,
-    String language,
-    List<String> resultType,
-    List<String> locationType,
+    String? language,
+    List<String>? resultType,
+    List<String>? locationType,
   ) {
     Map<String, String> queryParameters = {
       'key': apiKEY,
